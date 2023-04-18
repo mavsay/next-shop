@@ -1,0 +1,86 @@
+@import 'variables.module.scss';
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  margin-top: 20px;
+  background: $-prime-color;
+
+  &_img {
+    max-width: 120px;
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  &_price {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: $-default-color;
+  }
+  
+  &_description {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  &_block {
+    text-align: left;
+    width: 80%;
+    max-width: 400px;
+  }
+
+  &_actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  &_stepper {
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    background: $-button-color;
+    color: $-dark-color;
+    
+  }
+
+  &_button, &_count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: none;
+    background: $-button-color;
+  }
+
+  &_button {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+
+  &_count {
+    width: 40px;
+    text-align: center;
+  }
+
+  &_icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  &_remove {
+    width: 30px;
+    display: flex;
+  }
+
+  &_icon__remove {
+    stroke: var(--tg-theme-hint-color);
+    width: 22px;
+    height: auto;
+  }
+}
+
